@@ -1,0 +1,19 @@
+<div ng-init="getEmployeeDetailsAndSalary()" class="panel-body">
+    <div>EmployeeAndSalaryDetails</div>
+		<table class="table table-striped">
+			<thead>
+			<tr>
+					<th>EmpId</th>
+				  <th>Name</th>
+			 	 <th>Salary</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr ng-repeat="employee in employeesdetailsandsalary">
+						<td>{{employee.empId}}</td>
+						<td>{{employee.fullName}}</td>
+						<td>{{employee.salary}}</td>
+			</tr>
+			</tbody>
+		</table>		
+    <div>
